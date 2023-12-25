@@ -1,0 +1,45 @@
+Первый запрос на регистрацию POST
+{{url}}//users
+{
+  "user": {
+    "username": "nikitass",
+    "email": "sharenko001@mail.ru",
+    "password": "123123123"
+  }
+}
+
+Ответ 
+
+{
+    "user": {
+        "username": "nikitass",
+        "email": "sharenko001@mail.ru",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODkwYzM0OGM4MjhkMWIwMDM5MzQ5MSIsInVzZXJuYW1lIjoibmlraXRhc3MiLCJleHAiOjE3MDg2NjQzNzMsImlhdCI6MTcwMzQ4MDM3M30.kgxN7Dy-CB0bZxfhzzFrf6MLnN_CinX6oAx3FCp2SJc"
+    }
+}
+
+Второй запрос POST на авторизацию 
+{{url}}/users/login
+
+Ответ
+
+{
+    "user": {
+        "username": "nikitass",
+        "email": "sharenko001@mail.ru",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODkwYzM0OGM4MjhkMWIwMDM5MzQ5MSIsInVzZXJuYW1lIjoibmlraXRhc3MiLCJleHAiOjE3MDg2NjQ3MDcsImlhdCI6MTcwMzQ4MDcwN30.KU--9OAimVE5rqrmFbLNj-gihyLkx0YaItPa78e8gPY"
+    }
+}
+
+Третий запрос GET на конкретного юзера
+{{url}}/user
+
+Ответ
+
+{
+    "user": {
+        "username": "nikitass",
+        "email": "sharenko001@mail.ru",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODkwYzM0OGM4MjhkMWIwMDM5MzQ5MSIsInVzZXJuYW1lIjoibmlraXRhc3MiLCJleHAiOjE3MDg2NjQ4NTcsImlhdCI6MTcwMzQ4MDg1N30.oX4jH2WRgT_CXKvAEZys3n_AHZ7dHgQ_Wf5y3C8kJGU"
+    }
+}
